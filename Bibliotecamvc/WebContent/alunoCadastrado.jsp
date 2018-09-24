@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Cadastrado!</h1>
+<h1>Realizado!</h1>
 	<jsp:useBean id="dao" class="biblioteca.daos.AlunoDAO" />
 
 	<table border="1px">
