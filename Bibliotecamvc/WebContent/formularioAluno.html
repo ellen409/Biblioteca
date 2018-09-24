@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+h1{
+	font-size: 40px;
+	font-family: arial;
+}
+form{
+	font-family: arial;
+}
+</style>
+</head>
+<body>
+<h1>Adicionar Aluno</h1>
+	<form action="sistema" method="post">
+	<input type="hidden" name="comando" value="ListarAluno">
+		<div>
+			<label>Matricula:</label>
+			<input type="text" name="matricula">
+		</div>
+		<br>
+		<div>
+			<label>Nome:</label> 
+			<input type="text" name="nome">
+		</div>
+		<br>
+		<div>
+			<label>CPF:</label>
+			<input type="text" name="cpf">
+		</div>
+		<br>
+		<div>
+			<label>Data de Nascimento:</label> 
+			<input type="text" name="dataNascimento">
+		</div>
+		<div>
+			<label>Endereço:</label> 
+			<input type="text" name="endereco">
+		</div>
+		<br>
+		<div>
+		<button type="submit">Adicionar</button>
+		</div>
+	</form>
+
+
+</body>
+</html>
