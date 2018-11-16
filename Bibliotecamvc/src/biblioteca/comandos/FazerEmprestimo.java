@@ -29,7 +29,10 @@ public class FazerEmprestimo implements Comando {
 		
 		if(dao.estaEmprestado(l.getId())) {
 			return "emprestimo-naoRealizado.jsp";
-		}else {
+		}if else (dao.qtdLivrosEmprestados(aluno) == 3){
+			return "emprestimo-naoRealizado.jsp";
+		}
+		else {
 			Emprestimos emprestimos = new Emprestimos();
 			emprestimos.setId_livro(l.getId());
 			emprestimos.setMat_aluno(mat_aluno);
